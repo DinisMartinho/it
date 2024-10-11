@@ -37,7 +37,7 @@ function App() {
   }
 
   function pressEnter() {
-    if (currentRow > 6 || gameOver) return;
+    if (currentRow > 5 || gameOver) return;
     if (guessWord.length < word_length) return;
 
     const newKeyStatuses = { ...keyStatuses };
@@ -73,7 +73,7 @@ function App() {
       setCurrentRow(currentRow + 1);
       setGuessWord("");
 
-      if (currentRow + 1 > 6) {
+      if (currentRow + 1 > 5) {
         setModalIsOpen(true);
         setGameOver(true);
       }
