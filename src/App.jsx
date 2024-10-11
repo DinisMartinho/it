@@ -73,7 +73,7 @@ function App() {
       setCurrentRow(currentRow + 1);
       setGuessWord("");
 
-      if (currentRow + 1 > word_length) {
+      if (currentRow + 1 > 6) {
         setModalIsOpen(true);
         setGameOver(true);
       }
