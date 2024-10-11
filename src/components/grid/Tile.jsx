@@ -34,7 +34,7 @@ export default function Tile({ id, rowId }) {
     }
 
     return (
-        <div style={style} className="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 border-2 m-1">
+        <div style={style} className="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 border-black border-2 m-1">
             <p className="text-lg md:text-2xl font-bold">{letter}</p>
         </div>
     );
