@@ -37,7 +37,7 @@ function App() {
   }
 
   function pressEnter() {
-    if (currentRow > word_length || gameOver) return;
+    if (currentRow > 6 || gameOver) return;
     if (guessWord.length < word_length) return;
 
     const newKeyStatuses = { ...keyStatuses };
